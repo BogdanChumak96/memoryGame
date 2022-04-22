@@ -1,0 +1,58 @@
+body{
+    overflow:hidden;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.grid{
+    position: relative;
+    top: -95vh;
+    left: 100%;
+    transition: 2s;
+    margin: 0 auto;
+    width: 750px;
+    /* padding-top: 20px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(150px);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-rows: repeat(3, 100px); */
+}
+h1{
+    animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: black;    }
+    40%{    color:transparent; }
+    60%{    color: black; }
+    90%{    color:transparent;  }
+    100%{   color: black;    }
+}
+.card{
+    background-color: red;
+}
+.item{
+    border: 10px solid transparent;
+    /* padding: 15px; */
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+img{
+    width: 80%;
+}
+.startGame{
+    transition: 3s;
+    position: relative;
+    top:0;
+}
+.turnLeft{
+    position: relative;
+    transform: translateX(-220%);
+}
